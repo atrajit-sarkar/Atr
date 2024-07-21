@@ -11,7 +11,10 @@ def gcd(a,b):
     else:
       return -a
   else:
-    return gcd(b,a%b)
+    if a>b:
+      return gcd(b,a%b)
+    else:
+       return gcd(b,a)
   
 
 # GCD for passing argument as tuple..........
